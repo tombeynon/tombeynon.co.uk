@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: 'Cabin', sans-serif;
-  font-size: 16px;
+  font-size: 100%;
   text-align: center;
   color: #fff;
   background-color:rgba(0,0,0,0.1);
@@ -19,12 +19,12 @@ body {
 
 h1{
   font-family: 'Antic', sans-serif;
-  font-size:48px;
+  font-size:300%;
   font-weight:normal;
 }
 
 h2{
-  font-size:24px;
+  font-size:150%;
   font-weight:normal;
 }
 
@@ -40,7 +40,7 @@ p{
 section#main{
   width:300px;
   margin:0 auto 0 auto;
-  padding:75px 0 20px 0;
+  padding:50px 0 150px 0;
 }
 
 header h1{
@@ -73,7 +73,7 @@ ul.social li a{
   color:rgba(0,0,0,0);
   display:block;
   width:50px;
-  height:60px;
+  height:70px;
   background-position:bottom left;
   background-repeat:no-repeat;
 }
@@ -92,6 +92,25 @@ ul.social li.github a{
 
 ul.social li.stack a{
   background-image:url("../images/social/stack.png");
+}
+
+@media only screen and (max-width: 500px) {
+  body{
+    font-size:90%;
+  }
+
+  section#main{
+    width:275px;
+    padding-top:25px;
+  }
+
+  img.avatar{
+    width: 150px;
+  }
+
+  ul.social li{
+    margin-right: 25px;
+  }
 }
 
 /* Bob animation */
